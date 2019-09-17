@@ -7,11 +7,18 @@ Start time: __9:00 am___
 Finish time: __9:34 am___
 Actual time needed to complete: ___34 min__
 
-Number and name of feature: ________________________________
-Estimate of time needed to complete: _____
-Start time: _____
+Number and name of feature: ____________Locations__________
+Estimate of time needed to complete: __2 hours___
+Start time: __10:00___
+Finish time: __11:48___
+Actual time needed to complete: __1:48 minutes__
+
+Number and name of feature: ________weather_________
+Estimate of time needed to complete: __1 hour___
+Start time: __12:45__
 Finish time: _____
-Actual time needed to complete: _____
+Actual time needed to complete: __1:48 minutes__
+
 
 **Author**: Your Name Goes Here
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
