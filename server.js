@@ -14,11 +14,14 @@ const weatherArray = [];
 //location
 app.get('/location', (request, response) => {
   let searchQuery = request.query.data;
+
   const geoDataResults = require('./data/geo.json');  
 
-  const locations = new Location(searchQuery, geoDataResults);
-  response.send(locations);
-  console.log('testArray :', testArray);
+
+  const theLocation = new Location(searchQuery, geoDataResults);
+
+
+  response.send(theLocation);
 })
 
 //[
@@ -50,6 +53,7 @@ function Location(searchQuery, geoDataResults) {
   this.formatted_query = geoDataResults.results[0].formatted_address;
   this.latitude = geoDataResults.results[0].geometry.location.lat;
   this.longitude = geoDataResults.results[0].geometry.location.lng;
+
 }
 
 // constructor for weather
@@ -58,6 +62,7 @@ function Weather(value) {
   this.time = value.time;
 
   weatherArray.push(this);
+
 }
 
 
@@ -76,9 +81,6 @@ let formattedSummary = (arr => {
   })
   return summaryArray;
 })
-
-
-
 
 
 
